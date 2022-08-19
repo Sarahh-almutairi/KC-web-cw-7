@@ -1,25 +1,20 @@
-function BMI (width = 1.7 , height = 46) {
-    let result = width / (height * height);
+function BMI (weight = 55 , height = 1.7) {
+    let result = weight / (height * height);
     return result
 }
 console.log(BMI(10,40))
-console.log()
-console.log()
-console.log()
-console.log()
-console.log()
+console.log(bmi)
+console.log(bmi)
+console.log(bmi)
+console.log(bmi)
+console.log(bmi)
 let StatusText = document.getElementById(`result`)
 
 
-Object.onmouseover = function(){
-    alert(Status(bmi(80,1.8)))
-};
-
-Object.addEventListener("mouseover", alert(Status(BMI(80,1.8))))
 
 
 
-function status (BMI) {
+function Status(bmi) {
     if (bmi < 18.5){
      StatusText.style.color=`orange`
         return "نقص بالوزن";
