@@ -1,13 +1,10 @@
 function BMI (weight = 55 , height = 1.7) {
     let result = weight / (height * height);
-    return result
+    return result;
 }
-console.log(BMI(10,40))
-console.log(bmi)
-console.log(bmi)
-console.log(bmi)
-console.log(bmi)
-console.log(bmi)
+
+console.log(BMI) 
+
 let StatusText = document.getElementById(`result`)
 
 
