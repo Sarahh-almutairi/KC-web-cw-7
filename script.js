@@ -7,17 +7,13 @@ console.log(BMI)
 
 let StatusText = document.getElementById(`result`)
 
-
-
-
-
-function Status(bmi) {
-    if (bmi < 18.5){
+function Status(BodyMass) {
+    if (BodyMass < 18.5){
      StatusText.style.color=`orange`
         return "نقص بالوزن";
     }
 
-else if (bmi >= 18.5  && bmi < 25) {
+else if (BodyMass >= 18.5  && BodyMass < 25) {
     StatusText.style.color=`green`
 return `وزنك صحي`;
 
@@ -25,7 +21,7 @@ return `وزنك صحي`;
 
 
 
-else if (bmi >= 25) {
+else if (BodyMass >= 25) {
     StatusText.style.color=`red`
 return `لديك زيادة وزن`;
 
@@ -37,12 +33,12 @@ function calculate ()
 let height = document.getElementById(`height`).value;
 
 
-let bmi = BMI(weight,height);
-let desc = Status(bmi);
+let bmi_value = BMI(weight,height);
+let desc = Status(bmi_value);
 
 let div = document.getElementById(`result`);
 
-div.innerText = bmi + " == " + desc;
+div.innerText = bmi_value + " == " + desc;
 
 
 
